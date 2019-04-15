@@ -36,7 +36,6 @@ class CrBc_Plugins_Payment_Rave_Site extends CrBcAPaymentSitePlugin implements C
         $apiLink = 'https://api.ravepay.co/';
         $secretKey = $rave->live_sk;
         if ($rave->staging_account == 1) {
-            $apiLink = 'https://ravesandboxapi.flutterwave.com/';
             $secretKey = $rave->test_sk;
         }
 
